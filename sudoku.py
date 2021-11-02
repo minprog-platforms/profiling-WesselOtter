@@ -67,8 +67,8 @@ class Sudoku:
 
         next_x, next_y = -1, -1
 
-        for x in range(9):
-            for y in range(9):
+        for y in range(9):
+            for x in range(9):
                 if self.value_at(x, y) == 0 and next_x == -1 and next_y == -1:
                     next_x, next_y = x, y
 
